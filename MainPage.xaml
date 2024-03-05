@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectMaui.MainPage">
+
+    <ScrollView>
+         <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+        <Label Text="Welcome to My Stack App" HorizontalOptions="Center" />
+        <Label Text="Input:" HorizontalOptions="Start" />
+        <Entry x:Name="inputEntry" Placeholder="Enter Number" />
+        <Label Text="Output:" HorizontalOptions="Start" />
+        <Entry x:Name="outputEntry" Placeholder="Output" IsReadOnly="True" />
+        <Button x:Name="pushButton" Text="Push" Clicked="OnPushClicked" />
+        <Button x:Name="popButton" Text="Pop" Clicked="OnPopClicked" />
+        <Button x:Name="peekButton" Text="Peek" Clicked="OnPeekClicked" />
+        <Label Text="Stack:" HorizontalOptions="Center" />
+        <ListView x:Name="stackListView" />
+    </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
